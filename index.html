@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <!-- Body Container -->
+    <main class="body-container">
+        <!-- Header Container -->
+        <div class="header-container">
+            <h1>Notebook</h1>
+        </div>
+        <!-- text and button container -->
+        <section class="note-container">
+            <div class="text-box">
+                <div class="note-title">                            
+                    <textarea
+                        name="input-field"
+                        id="title-box"
+                        cols="27"
+                        rows="1"
+                        placeholder="Title..." >
+                    </textarea>
+                </div>
+            </div>
+                <div class="note-textbox">                    
+                    <textarea
+                        name="input-field"
+                        id="body-box"
+                        cols="27"
+                        rows="10"
+                        placeholder="Type here..." >
+                    </textarea>
+                </div>
+            </div>
+        </section>
+        <section class="button-container">
+            <div class="done-button"><button>Done</button></div>
+            <div class="see-notes"><button>See Notes</button></div>
+        </section>
+    </main>
+    
+</body>
+</html>
