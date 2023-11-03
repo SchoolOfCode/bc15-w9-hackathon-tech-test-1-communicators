@@ -27,14 +27,14 @@ async function sendDataToDatabase(e) {
   e.preventDefault();
 
   // Store all the new Data from the question section
-  const data = new FormData(noteContainer);
+  const noteData = new FormData(noteContainer);
   /* note: emoji response value defined elsewhere */
   let titleEntryValue = titleEntry.value || "No Title provided.";
   let noteEntryValue = noteEntry.value || "No note provided.";
 
   // !!!Check if the Submit is working
-  console.log("Input2: " + titleEntryValue);
-  console.log("Input3: " + noteEntryValue);
+  console.log("Title: " + titleEntryValue);
+  console.log("Note: " + noteEntryValue);
 
   // Empty all the question Written blocks
   noteContainer.reset();
@@ -54,9 +54,9 @@ async function sendDataToDatabase(e) {
   // If Statement - Check if response.ok is true
   if (response.ok) {
     // Store the json response
-    const data = await response.json();
+    const noteData = await response.json();
     // !!!Check if the data is correct
-    console.log("POST: " + data);
+    console.log("POST: " + noteData);
     // Popup to notify the user, new entry sent
     // displayPopUpForNewData();
   } else {
@@ -70,4 +70,4 @@ async function sendDataToDatabase(e) {
 
 // Event Listeners //////////////////////////////////////////////////////////////////////////////
 // Questions Container/POST Form
-noteContainer.addEventListener("Done", sendDataToDatabase);
+noteContainer.addEventListener("submit", sendDataToDatabase);
