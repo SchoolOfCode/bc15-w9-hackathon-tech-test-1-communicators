@@ -1,55 +1,114 @@
+
+
 .body-container {
   box-sizing: border-box;
-  margin: 10px;
+  width: 100%;
+  height: 200vh;
   padding: 0;
-  border: 2px red solid;
+  background-image: url("./images/Background_Notebook.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.header-container {
+.header-container{
   box-sizing: border-box;
-  margin: 10px;
   padding: 0;
-  border: 2px green solid;
+  background-color: rgba(255, 163, 88, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  color: white;
 }
-
+.header-h1{
+  margin-top: 100px;
+}
 .note-container {
   box-sizing: border-box;
-  margin: 10px;
+  margin-top: 200px;
   padding: 0;
-  border: 2px rgb(0, 128, 85) solid;
+  grid-template-columns: 100%;
+  display: grid;
+  grid-row-gap: 35px;
+  justify-content: center;
+  align-content: center;
 }
-
 .note-title {
   box-sizing: border-box;
   margin: 10px;
   padding: 0;
-  border: 2px yellow solid;
-}
+  /* border: 2px yellow solid; */
+  padding: 12px;
 
+}
 .note-textbox {
   box-sizing: border-box;
   margin: 10px;
-  padding: 0;
-  border: 2px purple solid;
+  /* text-align: center; */
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  color: white;
+  width: 97%;
+  /* background-color: white; */
+  opacity: 90%;
+  border-radius: 10px;
+  resize: none;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
-
 .button-container {
   box-sizing: border-box;
   margin: 10px;
   padding: 0;
-  border: 2px blue solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .done-button {
-  box-sizing: border-box;
-  margin: 10px;
+  border: none;
+  background: none;
   padding: 0;
-  border: 2px rgb(0, 98, 128) solid;
+  margin: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: rgb(222, 133, 0);
+  padding: 10px;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(249, 153, 27);
+  font-weight: bold;
+  text-align:center;
+}
+.see-notes {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(222, 133, 0);
+    padding: 10px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(249, 153, 27);
+    font-weight: bold;
+    text-align: center;
 }
 
-.see-notes {
+.old-note-container{
   box-sizing: border-box;
   margin: 10px;
   padding: 0;
-  border: 2px black solid;
+  /* border: 2px purple solid; */
+  display: flex;
+  flex-wrap: wrap;
 }
