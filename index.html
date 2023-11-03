@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Body Container -->
     <main class="body-container">
-        <!-- Header Container -->
-        <div class="header-container">
-            <h1 class>Notebook</h1>
+      <!-- Header Container -->
+      <div class="header-container">
+        <h1 class>Notebook</h1>
+      </div>
+      <!-- text and button container -->
+      <form class="note-container">
+        <div class="note-title">
+          <textarea
+            name="input-field1"
+            id="title-box"
+            cols="40"
+            rows="1"
+            placeholder="Title..."
+          ></textarea>
         </div>
-        <!-- text and button container -->
-        <form class="note-container">
-                <div class="note-title">
-                    <h3>Title of Notes</h3>
-                    <textarea
-                        name="input-field1"
-                        id="title-box"
-                        cols="40"
-                        rows="1"
-                        placeholder="Title..." >
-                    </textarea>
-                </div>
-                <h3>Contents</h3>
-                <div class="note-textbox">
-                    <textarea
-                        name="input-field2"
-                        id="body-box"
-                        cols="40"
-                        rows="10"
-                        placeholder="Type here..." >
-                    </textarea>
-                </div>
-            <div><button class="done-button" type="submit">Done</button></div>
-            <div><button class="see-notes" type="submit">See Notes</button></div>
-        </form>
-        <section class="button-container">
-        </section>
-        <div class="old-notes-title">
-            <h3>Previous Notes</h3>
-            <div class="old-note-container">
-               
-            </div>
+        <div class="note-textbox">
+          <textarea
+            name="input-field2"
+            id="body-box"
+            cols="40"
+            rows="10"
+            placeholder="Type here..."
+          ></textarea>
         </div>
+        <div><button class="done-button" type="submit">Done</button></div>
+        <div><button class="see-notes" type="submit">See Notes</button></div>
+      </form>
+      <section class="button-container"></section>
+      <div class="old-notes-title">
+        <h3>Previous Notes</h3>
+        <div class="old-note-container"></div>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
