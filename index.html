@@ -15,19 +15,18 @@
             <h1>Notebook</h1>
         </div>
         <!-- text and button container -->
-        <section class="note-container">
-            <div class="text-box">
-                <div class="note-title">                            
+        <form class="note-container">
+                <div class="note-title">
+                    <!-- <p>Title</p> -->
                     <textarea
                         name="input-field"
                         id="title-box"
-                        cols="27"
+                        cols="12"
                         rows="1"
                         placeholder="Title..." >
                     </textarea>
                 </div>
-            </div>
-                <div class="note-textbox">                    
+                <div class="note-textbox">
                     <textarea
                         name="input-field"
                         id="body-box"
@@ -37,9 +36,9 @@
                     </textarea>
                 </div>
             </div>
-        </section>
-        <section class="button-container">
             <div class="done-button"><button>Done</button></div>
+        </form>
+        <section class="button-container">
             <div class="see-notes"><button>See Notes</button></div>
         </section>
     </main>

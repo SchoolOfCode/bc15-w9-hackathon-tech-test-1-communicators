@@ -1,0 +1,55 @@
+.body-container {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px red solid;
+}
+
+.header-container {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px green solid;
+}
+
+.note-container {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px rgb(0, 128, 85) solid;
+}
+
+.note-title {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px yellow solid;
+}
+
+.note-textbox {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px purple solid;
+}
+
+.button-container {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px blue solid;
+}
+
+.done-button {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px rgb(0, 98, 128) solid;
+}
+
+.see-notes {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  border: 2px black solid;
+}
