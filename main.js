@@ -40,14 +40,14 @@ async function sendDataToDatabase(e) {
   noteContainer.reset();
 
   // Send a Fetch/POST Request to the Server
-  const response = await fetch("http://localhost:5000/note/", {
+  const response = await fetch("http://localhost:4000/note/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
       title: titleEntryValue,
-      note: noteEntryValue,
+      content: noteEntryValue,
     }),
   });
 
