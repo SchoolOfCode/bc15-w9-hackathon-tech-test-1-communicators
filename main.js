@@ -153,18 +153,23 @@ function displayNoteData(jsoninput) {
     // extracting the title/content
     let noteTitle = jsoninput.title;
     let noteContent = jsoninput.content;
+    const lineBreak = document.createElement("br");
     // creating a break
+    oldNoteContainer.appendChild(lineBreak);
     const newDivide = document.createElement("p");
     newDivide.textContent = `----------------------------`;
     oldNoteContainer.appendChild(newDivide);
+    oldNoteContainer.appendChild(lineBreak);
     // creating the title element
     const titleText = document.createElement("p");
     titleText.textContent = `Title: ${noteTitle}`;
     oldNoteContainer.appendChild(titleText);
+    oldNoteContainer.appendChild(lineBreak);
     // creating the content
     const contentText = document.createElement("p");
     contentText.textContent = `Content: ${noteContent}`;
     oldNoteContainer.appendChild(contentText);
+    oldNoteContainer.appendChild(lineBreak);
 }
 // Event Listeners //////////////////////////////////////////////////////////////////////////////
 // Questions Container/POST Form

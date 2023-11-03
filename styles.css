@@ -3,7 +3,7 @@
 .body-container {
   box-sizing: border-box;
   width: 100%;
-  height: 200vh;
+  height: 150vh;
   padding: 0;
   background-image: url("./images/Background_Notebook.png");
   background-size: cover;
@@ -23,12 +23,12 @@
 }
 .note-container {
   box-sizing: border-box;
-  margin-top: 200px;
+  margin-top: 40px;
   padding: 0;
   grid-template-columns: 100%;
   display: grid;
   grid-row-gap: 35px;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
 }
 .note-title {
@@ -63,6 +63,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .done-button {
@@ -109,6 +110,6 @@
   margin: 10px;
   padding: 0;
   /* border: 2px purple solid; */
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
 }
