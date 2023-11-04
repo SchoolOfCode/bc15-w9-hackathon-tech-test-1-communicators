@@ -15,28 +15,30 @@
         <h1 class>Notebook</h1>
       </div>
       <!-- text and button container -->
-      <form class="note-container">
-        <div class="note-title">
-          <textarea
-            name="input-field1"
-            id="title-box"
-            cols="35"
-            rows="1"
-            placeholder="Title..."
-          ></textarea>
-        </div>
-        <div class="note-textbox">
-          <textarea
-            name="input-field2"
-            id="body-box"
-            cols="35"
-            rows="10"
-            placeholder="Type here..."
-          ></textarea>
-        </div>
-        <div><button class="done-button" type="submit">Done</button></div>
-        <div><button class="see-notes" type="submit">See Notes</button></div>
-      </form>
+      <div class="note-container">
+        <form>
+          <div class="note-title">
+            <textarea
+              name="input-field1"
+              id="title-box"
+              cols="35"
+              rows="1"
+              placeholder="Title..."
+            ></textarea>
+          </div>
+          <div class="note-textbox">
+            <textarea
+              name="input-field2"
+              id="body-box"
+              cols="35"
+              rows="10"
+              placeholder="Note..."
+            ></textarea>
+          </div>
+          <div><button class="done-button" type="submit">Done</button></div>
+          <div><button class="see-notes" type="submit">See Notes</button></div>
+        </form>
+      </div>
       <section class="button-container"></section>
       <div class="old-notes-title">
         <h3>Previous Notes</h3>

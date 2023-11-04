@@ -5,7 +5,7 @@
   padding: 0;
   background-color: rgba(240, 149, 2, 0.469);
 }
-.header-container{
+.header-container {
   box-sizing: border-box;
   padding: 0;
   background-color: rgba(255, 163, 88, 0.9);
@@ -14,43 +14,47 @@
   border: none;
   color: white;
 }
-.header-h1{
+.header-h1 {
   margin-top: 100px;
 }
 .note-container {
   box-sizing: border-box;
   margin-top: 40px;
-  padding: 0;
+  width: 90%;
+  margin: auto;
   grid-template-columns: 100%;
-  display: grid;
-  grid-row-gap: 35px;
-  /* justify-content: center; */
-  align-content: center;
+  display: flex;
+  /* background-color: white; */
+  /* border: 5px red solid; */
+  justify-content: center;
 }
-.note-title {
-  box-sizing: border-box;
-  margin: 10px;
-  padding: 0;
-  /* border: 2px yellow solid; */
-  padding: 12px;
 
+/* textarea div */
+.note-title {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  opacity: 70%;
+  display: flex;
+  justify-content: center;
 }
 .note-textbox {
-  box-sizing: border-box;
-  margin: 10px;
-  /* text-align: center; */
-  border: none;
-  border-radius: 20px;
-  padding: 12px;
-  color: white;
-  width: 97%;
-  /* background-color: white; */
-  opacity: 90%;
-  border-radius: 10px;
-  resize: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  opacity: 70%;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+
+  /* textarea */
+}
+#title-box {
+  border: none;
+  resize: none;
+}
+#body-box {
+  border: none;
+  resize: none;
 }
 .button-container {
   box-sizing: border-box;
@@ -59,10 +63,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .done-button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: rgb(222, 133, 0);
+  padding: 10px;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(249, 153, 27);
+  font-weight: bold;
+  text-align: center;
+}
+.see-notes {
   border: none;
   background: none;
   padding: 0;
@@ -79,29 +101,10 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(249, 153, 27);
   font-weight: bold;
-  text-align:center;
-}
-.see-notes {
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    background-color: rgb(222, 133, 0);
-    padding: 10px;
-    width: 50%;
-    margin-left: 25%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(249, 153, 27);
-    font-weight: bold;
-    text-align: center;
+  text-align: center;
 }
 
-.old-note-container{
+.old-note-container {
   box-sizing: border-box;
   margin: 10px;
   padding: 0;
